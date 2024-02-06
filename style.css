@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Russo+One&display=swap");
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.video-background audio {
+  display: none;
+}
+section {
+  text-align: center;
+  justify-content: center;
+}
+img {
+  width: 120px;
+  margin-top: 20px;
+}
+h2 {
+  font-family: "Russo One", sans-serif;
+  color: gold;
+  text-shadow: 3px 3px black;
+  font-size: 1.8rem;
+}
+.blink {
+  font-family: "Oxygen", sans-serif;
+  animation: blinker 2.3s linear infinite;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: underline;
+  /* Larger, responsive font size */
+  margin-bottom: 20px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+a {
+  font-family: "Russo One", sans-serif;
+  text-decoration: none;
+  background-color: gold;
+  color: black;
+  padding: 8px 15px;
+  margin: 100px;
+  border: black;
+  border-radius: 7px;
+  font-size: 1.2rem;
+}
+a:hover {
+  background-color: red;
+  color: white;
+}
